@@ -1,0 +1,9 @@
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\bin\Release\ConsoleApp5.exe
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\bin\Release\ConsoleApp5.pdb
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\obj\Release\ConsoleApp5.csproj.AssemblyReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\obj\Release\ConsoleApp5.csproj.CoreCompileInputs.cache
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\obj\Release\ConsoleApp5.exe
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\obj\Release\ConsoleApp5.pdb
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\bin\Release\UIAutomationClient.dll
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\bin\Release\UIAutomationTypes.dll
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\obj\Release\ConsoleApp5.csproj.CopyComplete
