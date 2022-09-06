@@ -29,6 +29,7 @@ namespace TestScenario
 
                 AutomationElement menuTab = aeForm.FindFirst(TreeScope.Children,
                 new PropertyCondition(AutomationElement.AutomationIdProperty, "MenuBar"));
+                Console.WriteLine(menuTab.ToString());
                 Thread.Sleep(5000);
                 AutomationElement file = menuTab.FindFirst(TreeScope.Children,
                 new PropertyCondition(AutomationElement.NameProperty, "File"));
