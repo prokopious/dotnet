@@ -4,3 +4,6 @@ C:\Users\huyetto\source\repos\ConsoleApp9\obj\Debug\ConsoleApp9.csproj.AssemblyR
 C:\Users\huyetto\source\repos\ConsoleApp9\obj\Debug\ConsoleApp9.csproj.CoreCompileInputs.cache
 C:\Users\huyetto\source\repos\ConsoleApp9\obj\Debug\ConsoleApp9.exe
 C:\Users\huyetto\source\repos\ConsoleApp9\obj\Debug\ConsoleApp9.pdb
+C:\Users\huyetto\source\repos\ConsoleApp9\bin\Debug\UIAutomationClient.dll
+C:\Users\huyetto\source\repos\ConsoleApp9\bin\Debug\UIAutomationTypes.dll
+C:\Users\huyetto\source\repos\ConsoleApp9\obj\Debug\ConsoleApp9.csproj.CopyComplete
