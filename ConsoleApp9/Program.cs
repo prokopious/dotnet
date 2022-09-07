@@ -29,21 +29,44 @@ namespace TestScenario
                 if (aeForm == null) Console.WriteLine("Did not find it");
                 else Console.WriteLine("Found it!");
                 Thread.Sleep(5000);
-                AutomationElement editBox = null;
+
+                AutomationElement menuTab = null;
+                int numWaits2 = 0;
                 do
                 {
-                    Console.WriteLine("Looking for Notepad");
-                    editBox = aeForm.FindFirst(TreeScope.Children,
-                      new PropertyCondition(AutomationElement.ClassNameProperty, "Edit"));
-                    ++numWaits;
+                    Console.WriteLine("Looking for Menu");
+                    menuTab = aeForm.FindFirst(TreeScope.Children,
+                       new PropertyCondition(AutomationElement.AutomationIdProperty, "MenuBar"));
+                    ++numWaits2;
                     Thread.Sleep(100);
-                } while (editBox == null && numWaits < 50);
-                if (editBox == null) Console.WriteLine("Did not find it");
+                } while (menuTab == null && numWaits2 < 50);
+                if (menuTab == null) Console.WriteLine("Did not find it");
                 else Console.WriteLine("Found it!");
                 Thread.Sleep(5000);
-                editBox.SetFocus();
+
+                AutomationElement file = null;
+                int numWaits3 = 0;
+                do
+                {
+                    Console.WriteLine("Looking for File");
+                    file = menuTab.FindFirst(TreeScope.Children,
+                       new PropertyCondition(AutomationElement.NameProperty, "File"));
+                    ++numWaits2;
+                    Thread.Sleep(100);
+                } while (file == null && numWaits3 < 50);
+                if (file == null) Console.WriteLine("Did not find it");
+                else Console.WriteLine("Found it!");
                 Thread.Sleep(5000);
-                SendKeys.SendWait("Hello World");
+
+
+
+
+                Thread.Sleep(5000);
+                Console.WriteLine("Selecting File");
+                ExpandCollapsePattern ipClickButton1 = (ExpandCollapsePattern)file.GetCurrentPattern(ExpandCollapsePattern.Pattern);
+                Thread.Sleep(5000);
+                ipClickButton1.Expand();
+
                 Thread.Sleep(5000);
 
             }
