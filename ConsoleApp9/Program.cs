@@ -29,25 +29,27 @@ namespace TestScenario
                 if (aeForm == null) Console.WriteLine("Did not find it");
                 else Console.WriteLine("Found it!");
                 Thread.Sleep(5000);
+                AutomationElement editBox = null;
+                do
+                {
+                    Console.WriteLine("Looking for Notepad");
+                    editBox = aeForm.FindFirst(TreeScope.Children,
+                      new PropertyCondition(AutomationElement.ClassNameProperty, "Edit"));
+                    ++numWaits;
+                    Thread.Sleep(100);
+                } while (editBox == null && numWaits < 50);
+                if (editBox == null) Console.WriteLine("Did not find it");
+                else Console.WriteLine("Found it!");
+                Thread.Sleep(5000);
 
 
 
 
-  
-                AutomationElement editBox = aeForm.FindFirst(TreeScope.Children, new PropertyCondition(AutomationElement.NameProperty, "Edit"));
+
+
               
-                Thread.Sleep(2000);
-
-  
+                Thread.Sleep(5000);
                 SendKeys.SendWait("Hello World");
-
-
-
-
-
-
-
-
                 Thread.Sleep(5000);
 
             }
