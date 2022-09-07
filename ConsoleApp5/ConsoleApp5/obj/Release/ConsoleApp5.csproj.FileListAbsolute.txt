@@ -7,5 +7,4 @@ C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\obj\Release\ConsoleApp5.pd
 C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\bin\Release\UIAutomationClient.dll
 C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\bin\Release\UIAutomationTypes.dll
 C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\obj\Release\ConsoleApp5.csproj.CopyComplete
-C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\bin\Release\UIAutomationClientsideProviders.dll
 C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\bin\Release\UIAutomationProvider.dll

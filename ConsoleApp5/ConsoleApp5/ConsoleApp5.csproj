@@ -55,9 +55,6 @@
     <Reference Include="UIAutomationClient">
       <Private>True</Private>
     </Reference>
-    <Reference Include="UIAutomationClientsideProviders">
-      <Private>True</Private>
-    </Reference>
     <Reference Include="UIAutomationProvider">
       <Private>True</Private>
     </Reference>
