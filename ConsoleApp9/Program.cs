@@ -41,13 +41,7 @@ namespace TestScenario
                 if (editBox == null) Console.WriteLine("Did not find it");
                 else Console.WriteLine("Found it!");
                 Thread.Sleep(5000);
-
-
-
-
-
-
-              
+                editBox.SetFocus();
                 Thread.Sleep(5000);
                 SendKeys.SendWait("Hello World");
                 Thread.Sleep(5000);
