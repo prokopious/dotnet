@@ -36,7 +36,7 @@ namespace TestScenario
                 {
                     Console.WriteLine("Looking for Menu");
                     menuTab = aeForm.FindFirst(TreeScope.Children,
-                       new PropertyCondition(AutomationElement.AutomationIdProperty, "MenuBar"));
+                       new PropertyCondition(AutomationElement.NameProperty, "Application"));
                     ++numWaits2;
                     Thread.Sleep(100);
                 } while (menuTab == null && numWaits2 < 50);
