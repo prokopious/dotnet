@@ -6,3 +6,6 @@ C:\Users\huyetto\source\repos\ConsoleApp10\obj\Debug\ConsoleApp10.csproj.Suggest
 C:\Users\huyetto\source\repos\ConsoleApp10\obj\Debug\ConsoleApp10.csproj.CoreCompileInputs.cache
 C:\Users\huyetto\source\repos\ConsoleApp10\obj\Debug\ConsoleApp10.exe
 C:\Users\huyetto\source\repos\ConsoleApp10\obj\Debug\ConsoleApp10.pdb
+C:\Users\huyetto\source\repos\ConsoleApp10\bin\Debug\UIAutomationClient.dll
+C:\Users\huyetto\source\repos\ConsoleApp10\bin\Debug\UIAutomationTypes.dll
+C:\Users\huyetto\source\repos\ConsoleApp10\obj\Debug\ConsoleApp10.csproj.CopyComplete

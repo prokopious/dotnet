@@ -2,8 +2,6 @@
 using System.Windows.Automation;
 using System.Diagnostics;
 using System.Threading;
-using System.Xml.Linq;
-using System.Windows.Forms;
 namespace TestScenario
 {
     class Program
@@ -13,8 +11,7 @@ namespace TestScenario
         {
             try
             {
-                Process p = Process.Start("C:\\Windows\\notepad.exe");
-                Thread.Sleep(5000);
+                Thread.Sleep(3000);
                 AutomationElement aeDesktop = AutomationElement.RootElement;
                 AutomationElement aeForm = null;
                 int numWaits = 0;
