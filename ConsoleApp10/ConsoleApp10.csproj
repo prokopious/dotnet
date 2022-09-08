@@ -48,6 +48,7 @@
     </Reference>
     <Reference Include="UIAutomationTypes">
       <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
   </ItemGroup>
   <ItemGroup>
