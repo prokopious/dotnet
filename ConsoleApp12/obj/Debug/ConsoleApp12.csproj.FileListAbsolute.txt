@@ -1,0 +1,12 @@
+C:\Users\huyetto\source\repos\ConsoleApp12\bin\Debug\ConsoleApp12.exe
+C:\Users\huyetto\source\repos\ConsoleApp12\bin\Debug\ConsoleApp12.pdb
+C:\Users\huyetto\source\repos\ConsoleApp12\obj\Debug\ConsoleApp12.csproj.AssemblyReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp12\obj\Debug\Interop.UIA.dll
+C:\Users\huyetto\source\repos\ConsoleApp12\obj\Debug\Interop.UIAutomationBlockingCoreLib.dll
+C:\Users\huyetto\source\repos\ConsoleApp12\obj\Debug\Interop.UIAutomationClient.dll
+C:\Users\huyetto\source\repos\ConsoleApp12\obj\Debug\Interop.UIAutomationCrossBitnessHookLib.dll
+C:\Users\huyetto\source\repos\ConsoleApp12\obj\Debug\Interop.UIEVENTLib.dll
+C:\Users\huyetto\source\repos\ConsoleApp12\obj\Debug\ConsoleApp12.csproj.ResolveComReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp12\obj\Debug\ConsoleApp12.csproj.CoreCompileInputs.cache
+C:\Users\huyetto\source\repos\ConsoleApp12\obj\Debug\ConsoleApp12.exe
+C:\Users\huyetto\source\repos\ConsoleApp12\obj\Debug\ConsoleApp12.pdb
