@@ -1,0 +1,9 @@
+C:\Users\huyetto\source\repos\ConsoleApp13\bin\Debug\ConsoleApp13.exe
+C:\Users\huyetto\source\repos\ConsoleApp13\bin\Debug\ConsoleApp13.pdb
+C:\Users\huyetto\source\repos\ConsoleApp13\bin\Debug\Interop.UIAutomationClient.dll
+C:\Users\huyetto\source\repos\ConsoleApp13\obj\Debug\ConsoleApp13.csproj.AssemblyReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp13\obj\Debug\Interop.UIAutomationClient.dll
+C:\Users\huyetto\source\repos\ConsoleApp13\obj\Debug\ConsoleApp13.csproj.ResolveComReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp13\obj\Debug\ConsoleApp13.csproj.CoreCompileInputs.cache
+C:\Users\huyetto\source\repos\ConsoleApp13\obj\Debug\ConsoleApp13.exe
+C:\Users\huyetto\source\repos\ConsoleApp13\obj\Debug\ConsoleApp13.pdb
