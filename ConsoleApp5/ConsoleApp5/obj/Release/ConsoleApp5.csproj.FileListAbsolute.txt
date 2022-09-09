@@ -10,3 +10,5 @@ C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\obj\Release\ConsoleApp5.cs
 C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\bin\Release\UIAutomationProvider.dll
 C:\Users\huyetto\Desktop\dotnet\ConsoleApp5.exe
 C:\Users\huyetto\Desktop\dotnet\ConsoleApp5.pdb
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\obj\Release\Interop.MSComctlLib.dll
+C:\Users\huyetto\source\repos\ConsoleApp5\ConsoleApp5\obj\Release\ConsoleApp5.csproj.ResolveComReference.cache
