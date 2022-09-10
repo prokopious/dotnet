@@ -27,10 +27,21 @@ namespace TestScenario
                 else Console.WriteLine("Found it!");
                 Thread.Sleep(5000);
 
-                AutomationElement textField = aeForm.FindFirst(TreeScope.Children,
-                new PropertyCondition(AutomationElement.AutomationIdProperty, "15"));
-                Console.WriteLine(textField.Current.Name);
+                AutomationElement textField = null;
+                int numWaits2 = 0;
+                do
+                {
+                    Console.WriteLine("Looking for Text Editor");
+                    textField = aeForm.FindFirst(TreeScope.Children,
+                      new PropertyCondition(AutomationElement.ClassNameProperty, "Edit"));
+                    ++numWaits;
+                    Thread.Sleep(100);
+                } while (textField == null && numWaits2 < 50);
+                if (textField == null) Console.WriteLine("Did not find it");
+                else Console.WriteLine("Found it!");
                 Thread.Sleep(5000);
+
+    
 
             }
             catch (Exception ex)
