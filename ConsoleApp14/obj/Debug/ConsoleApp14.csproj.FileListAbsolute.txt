@@ -1,0 +1,6 @@
+C:\Users\huyetto\source\repos\ConsoleApp14\bin\Debug\ConsoleApp14.exe
+C:\Users\huyetto\source\repos\ConsoleApp14\bin\Debug\ConsoleApp14.pdb
+C:\Users\huyetto\source\repos\ConsoleApp14\obj\Debug\ConsoleApp14.csproj.AssemblyReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp14\obj\Debug\ConsoleApp14.csproj.CoreCompileInputs.cache
+C:\Users\huyetto\source\repos\ConsoleApp14\obj\Debug\ConsoleApp14.exe
+C:\Users\huyetto\source\repos\ConsoleApp14\obj\Debug\ConsoleApp14.pdb
