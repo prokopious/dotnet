@@ -33,11 +33,11 @@ namespace TestScenario
                 Thread.Sleep(2000);
 
                 AutomationElement textField = aeForm.FindFirst(TreeScope.Children,
-                    new PropertyCondition(AutomationElement.NameProperty, "File"));
+                    new PropertyCondition(AutomationElement.ClassNameProperty, "Edit"));
 
                 Thread.Sleep(2000);
 
-                Console.WriteLine("Found it!");
+                Console.WriteLine(textField.Current.AutomationId);
 
                 Thread.Sleep(2000);
 
