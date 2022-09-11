@@ -32,19 +32,16 @@ namespace TestScenario
                 else Console.WriteLine("Found it!");
                 Thread.Sleep(2000);
 
-                AutomationElement textField = null;
-                int numWaits2 = 0;
-                do
-                {
-                    Console.WriteLine("Looking for Text Editor");
-                    textField = aeForm.FindFirst(TreeScope.Children,
-                      new PropertyCondition(AutomationElement.NameProperty, "Application"));
-                    ++numWaits;
-                    Thread.Sleep(100);
-                } while (textField == null && numWaits2 < 50);
-                if (textField == null) Console.WriteLine("Did not find it");
-                else Console.WriteLine("Found it!");
-                Thread.Sleep(5000);
+                AutomationElement textField = aeForm.FindFirst(TreeScope.Children,
+                    new PropertyCondition(AutomationElement.NameProperty, "File"));
+
+                Thread.Sleep(2000);
+
+                Console.WriteLine("Found it!");
+
+                Thread.Sleep(2000);
+
+
 
             }
             catch (Exception ex)
@@ -52,5 +49,11 @@ namespace TestScenario
                 Console.WriteLine("Fatal error: " + ex.Message);
             }
         }
+
+  
+
+
+
+
     }
 }
