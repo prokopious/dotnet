@@ -1,0 +1,6 @@
+C:\Users\huyetto\source\repos\ConsoleApp21\bin\Release\ConsoleApp21.exe
+C:\Users\huyetto\source\repos\ConsoleApp21\bin\Release\ConsoleApp21.pdb
+C:\Users\huyetto\source\repos\ConsoleApp21\obj\Release\ConsoleApp21.csproj.AssemblyReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp21\obj\Release\ConsoleApp21.csproj.CoreCompileInputs.cache
+C:\Users\huyetto\source\repos\ConsoleApp21\obj\Release\ConsoleApp21.exe
+C:\Users\huyetto\source\repos\ConsoleApp21\obj\Release\ConsoleApp21.pdb
