@@ -1,0 +1,12 @@
+C:\Users\huyetto\source\repos\ConsoleApp20\obj\Debug\ConsoleApp20.csproj.AssemblyReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp20\obj\Debug\ConsoleApp20.csproj.SuggestedBindingRedirects.cache
+C:\Users\huyetto\source\repos\ConsoleApp20\obj\Debug\Interop.UIA.dll
+C:\Users\huyetto\source\repos\ConsoleApp20\obj\Debug\ConsoleApp20.csproj.ResolveComReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp20\obj\Debug\ConsoleApp20.csproj.CoreCompileInputs.cache
+C:\Users\huyetto\source\repos\ConsoleApp20\bin\Debug\ConsoleApp20.exe.config
+C:\Users\huyetto\source\repos\ConsoleApp20\bin\Debug\ConsoleApp20.exe
+C:\Users\huyetto\source\repos\ConsoleApp20\bin\Debug\ConsoleApp20.pdb
+C:\Users\huyetto\source\repos\ConsoleApp20\bin\Debug\Interop.UIAutomationClient.dll
+C:\Users\huyetto\source\repos\ConsoleApp20\obj\Debug\ConsoleApp20.csproj.CopyComplete
+C:\Users\huyetto\source\repos\ConsoleApp20\obj\Debug\ConsoleApp20.exe
+C:\Users\huyetto\source\repos\ConsoleApp20\obj\Debug\ConsoleApp20.pdb
