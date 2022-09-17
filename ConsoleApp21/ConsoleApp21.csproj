@@ -38,13 +38,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="UIAutomationClient">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UIAutomationClientsideProviders" />
-    <Reference Include="UIAutomationProvider" />
-    <Reference Include="UIAutomationTypes">
-      <Private>False</Private>
+    <Reference Include="UIAutomationClient1">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\UIAutomationClient.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +48,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="UIA">
+      <Guid>{930299CE-9965-4DEC-B0F4-A54848D4B667}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="UIAutomationClient">
+      <Guid>{944DE083-8FB8-45CF-BCB7-C477ACB2F897}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
