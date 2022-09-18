@@ -28,8 +28,10 @@ namespace TestScenario
             IUIAutomationElement e = rootElement.FindFirst(TreeScope.TreeScope_Children, condition);
 
             Console.WriteLine(e.CurrentName);
-            
 
+            IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "15");
+            IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
+            Console.WriteLine(e2.CurrentName);
             Thread.Sleep(10000);
 
         }
