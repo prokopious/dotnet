@@ -4,8 +4,4 @@ C:\Users\huyetto\source\repos\ConsoleApp21\obj\Debug\ConsoleApp21.csproj.Assembl
 C:\Users\huyetto\source\repos\ConsoleApp21\obj\Debug\ConsoleApp21.csproj.CoreCompileInputs.cache
 C:\Users\huyetto\source\repos\ConsoleApp21\obj\Debug\ConsoleApp21.exe
 C:\Users\huyetto\source\repos\ConsoleApp21\obj\Debug\ConsoleApp21.pdb
-C:\Users\huyetto\source\repos\ConsoleApp21\obj\Debug\Interop.UIA.dll
-C:\Users\huyetto\source\repos\ConsoleApp21\obj\Debug\Interop.UIAutomationClient.dll
 C:\Users\huyetto\source\repos\ConsoleApp21\obj\Debug\ConsoleApp21.csproj.ResolveComReference.cache
-C:\Users\huyetto\source\repos\ConsoleApp21\bin\Debug\Interop.UIA.dll
-C:\Users\huyetto\source\repos\ConsoleApp21\bin\Debug\Interop.UIAutomationClient.dll

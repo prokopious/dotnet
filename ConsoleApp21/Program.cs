@@ -1,9 +1,10 @@
 ﻿using System;
-using UIAutomationClient;
+
 using System.Threading;
 using System.Windows.Automation;
 
 using System.Diagnostics;
+
 
 namespace TestScenario
 {
@@ -11,37 +12,43 @@ namespace TestScenario
     {
 
         static void Main(string[] args) {
-          //  Process p = Process.Start("C:\\Windows\\notepad.exe");
+            //  Process p = Process.Start("C:\\Windows\\notepad.exe");
+           // Process p = Process.Start("C:\\Windows\\notepad.exe");
             Thread.Sleep(5000);
-            // Instantiate the UIA object:
-            IUIAutomation _automation = new CUIAutomation();
-            // Get the root element
-            IUIAutomationElement rootElement = _automation.GetRootElement();
-            // Get its name
-            Console.WriteLine("got the root element");
-            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_NamePropertyId, "Microsoft .NET Framework");
-          
-            IUIAutomationElement dialog = rootElement.FindFirst(TreeScope.TreeScope_Children, condition);
+            AutomationElement aeDesktop = AutomationElement.RootElement;
+      
+            AutomationElement continueButton = aeDesktop.FindFirst(TreeScope.Children, new PropertyCondition(AutomationElement.NameProperty, "Microsoft .NET Framework"));
 
-            Console.WriteLine(dialog.CurrentName);
-
-            IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_NamePropertyId, "Continue");
-
-            IUIAutomationElement continueButton = dialog.FindFirst(TreeScope.TreeScope_Children, condition2);
-
-            Console.WriteLine(continueButton.CurrentName);
-            Thread.Sleep(2000);
-            IUIAutomationInvokePattern invokePatternFileTab = (IUIAutomationInvokePattern)continueButton.GetCurrentPattern(10000);
-            Console.WriteLine(invokePatternFileTab.ToString());
-            Thread.Sleep(2000);
-            invokePatternFileTab.Invoke();
-
-            Thread.Sleep(10000);
+            Console.WriteLine(continueButton.Current.ClassName);
+           // InvokeControl(continueButton);
+            Thread.Sleep(5000);
 
         }
 
 
+        private static void InvokeControl(AutomationElement targetControl)
+        {
+            InvokePattern invokePattern = null;
 
+            try
+            {
+                invokePattern =
+                    targetControl.GetCurrentPattern(InvokePattern.Pattern)
+                    as InvokePattern;
+            }
+            catch (ElementNotEnabledException)
+            {
+                // Object is not enabled
+                return;
+            }
+            catch (InvalidOperationException)
+            {
+                // object doesn't support the InvokePattern control pattern
+                return;
+            }
+
+            invokePattern.Invoke();
+        }
 
 
 
