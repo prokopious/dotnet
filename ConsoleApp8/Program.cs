@@ -15,16 +15,20 @@ namespace TestScenario
             Console.WriteLine("found desktop");
 
    
-            AutomationElement dotnet = aeDesktop.FindFirst(TreeScope.Children,
-              new PropertyCondition(AutomationElement.NameProperty, "Microsoft .NET Framework"));
-            Console.WriteLine("found edock");
+            AutomationElement loginForm = aeDesktop.FindFirst(TreeScope.Children,
+              new PropertyCondition(AutomationElement.AutomationIdProperty, "frmLogin"));
+            Console.WriteLine("found login window");
 
+            Thread.Sleep(1000);
 
+            AutomationElement forkliftID = loginForm.FindFirst(TreeScope.Children,
+            new PropertyCondition(AutomationElement.NameProperty, "Enter Forklift ID"));
 
-            AutomationElement cont = dotnet.FindFirst(TreeScope.Children,
-            new PropertyCondition(AutomationElement.NameProperty, "Continue"));
+            Console.WriteLine("found forklift id");
 
-            Console.WriteLine("found continue");
+   
+
+     
 
 
 
