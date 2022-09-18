@@ -16,6 +16,8 @@ namespace TestScenario
            // Process p = Process.Start("C:\\Windows\\notepad.exe");
             Thread.Sleep(5000);
             AutomationElement aeDesktop = AutomationElement.RootElement;
+
+            Console.WriteLine("found desktop");
       
             AutomationElement continueButton = aeDesktop.FindFirst(TreeScope.Children, new PropertyCondition(AutomationElement.NameProperty, "Microsoft .NET Framework"));
 
