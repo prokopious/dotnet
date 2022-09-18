@@ -19,25 +19,21 @@ namespace TestScenario
             IUIAutomationElement rootElement = _automation.GetRootElement();
             // Get its name
             Console.WriteLine("got the root element");
-            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_NamePropertyId, "eDock.exe - .NET Framework Initialization Error");
+            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_NamePropertyId, "Microsoft .NET Framework");
           
-            IUIAutomationElement e = rootElement.FindFirst(TreeScope.TreeScope_Children, condition);
+            IUIAutomationElement dialog = rootElement.FindFirst(TreeScope.TreeScope_Children, condition);
 
-            Console.WriteLine(e.CurrentClassName);
+            Console.WriteLine(dialog.CurrentName);
 
-            IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "MenuBar");
+            IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_NamePropertyId, "Continue");
 
-            IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
+            IUIAutomationElement continueButton = dialog.FindFirst(TreeScope.TreeScope_Children, condition2);
 
-            Console.WriteLine(e2.CurrentName);
-            int patternIdInvoke = 10000;
-            IUIAutomationInvokePattern invokePatternFileTab = (IUIAutomationInvokePattern)e2.GetCachedPattern(patternIdInvoke);
+            Console.WriteLine(continueButton.CurrentName);
+ 
+            IUIAutomationInvokePattern invokePatternFileTab = (IUIAutomationInvokePattern)continueButton.GetCurrentPattern(10000);
             invokePatternFileTab.Invoke();
 
-
-            // IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "15");
-            // IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
-            // Console.WriteLine(e2.CurrentName);
             Thread.Sleep(10000);
 
         }
