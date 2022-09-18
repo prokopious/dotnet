@@ -30,9 +30,9 @@ namespace TestScenario
             IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
 
             Console.WriteLine(e2.CurrentName);
-
-            IUIAutomationInvokePattern i = e2 as IUIAutomationInvokePattern;
-            i.Invoke();
+            int patternIdInvoke = 10000;
+            IUIAutomationInvokePattern invokePatternFileTab = (IUIAutomationInvokePattern)e2.GetCachedPattern(patternIdInvoke);
+            invokePatternFileTab.Invoke();
 
 
             // IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "15");
