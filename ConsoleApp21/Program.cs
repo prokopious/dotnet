@@ -31,7 +31,13 @@ namespace TestScenario
 
             Console.WriteLine(e.CurrentClassName);
 
-            
+            IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "1");
+
+            IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
+
+            Console.WriteLine(e2.CurrentClassName);
+
+
 
             // IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "15");
             // IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
