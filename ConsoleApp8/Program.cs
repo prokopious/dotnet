@@ -13,6 +13,7 @@ namespace TestScenario
                 Process p = Process.Start("C:\\Windows\\notepad.exe");
                 Thread.Sleep(5000);
                 AutomationElement aeDesktop = AutomationElement.RootElement;
+                Console.WriteLine("found dessfsdfktop");
                 AutomationElement aeForm = null;
                 int numWaits = 0;
                 do
