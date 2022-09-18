@@ -2,6 +2,7 @@
 using UIAutomationClient;
 using System.Threading;
 using System.Windows.Automation;
+
 using System.Diagnostics;
 
 namespace TestScenario
@@ -21,17 +22,20 @@ namespace TestScenario
             Console.WriteLine(
                 "The root automation element's name should be 'Desktop'.");
             Console.WriteLine("The actual value is: '{0}'", rootName);
+         
 
-        
-            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_ClassNamePropertyId, "WindowsForms10.Window.8.app.0.141b42a_r7_ad1");
+
+            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_NamePropertyId, "eDock.exe - .NET Framework Initialization Error");
           
             IUIAutomationElement e = rootElement.FindFirst(TreeScope.TreeScope_Children, condition);
 
-            Console.WriteLine(e.CurrentName);
+            Console.WriteLine(e.CurrentClassName);
 
-           // IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "15");
-           // IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
-           // Console.WriteLine(e2.CurrentName);
+            
+
+            // IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "15");
+            // IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
+            // Console.WriteLine(e2.CurrentName);
             Thread.Sleep(10000);
 
         }
