@@ -10,7 +10,7 @@ namespace TestScenario
     {
 
         static void Main(string[] args) {
-            Process p = Process.Start("C:\\Windows\\notepad.exe");
+          //  Process p = Process.Start("C:\\Windows\\notepad.exe");
             Thread.Sleep(5000);
             // Instantiate the UIA object:
             IUIAutomation _automation = new CUIAutomation();
@@ -23,15 +23,15 @@ namespace TestScenario
             Console.WriteLine("The actual value is: '{0}'", rootName);
 
         
-            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_ClassNamePropertyId, "Notepad");
+            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_ClassNamePropertyId, "WindowsForms10.Window.8.app.0.141b42a_r7_ad1");
           
             IUIAutomationElement e = rootElement.FindFirst(TreeScope.TreeScope_Children, condition);
 
             Console.WriteLine(e.CurrentName);
 
-            IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "15");
-            IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
-            Console.WriteLine(e2.CurrentName);
+           // IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "15");
+           // IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
+           // Console.WriteLine(e2.CurrentName);
             Thread.Sleep(10000);
 
         }
