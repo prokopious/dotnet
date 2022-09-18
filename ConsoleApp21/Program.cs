@@ -18,12 +18,6 @@ namespace TestScenario
             // Get the root element
             IUIAutomationElement rootElement = _automation.GetRootElement();
             // Get its name
-            string rootName = rootElement.CurrentName;
-            Console.WriteLine(
-                "The root automation element's name should be 'Desktop'.");
-            Console.WriteLine("The actual value is: '{0}'", rootName);
-         
-
 
             IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_NamePropertyId, "eDock.exe - .NET Framework Initialization Error");
           
@@ -31,11 +25,11 @@ namespace TestScenario
 
             Console.WriteLine(e.CurrentClassName);
 
-            IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "1");
+            IUIAutomationCondition condition2 = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_AutomationIdPropertyId, "65535");
 
             IUIAutomationElement e2 = e.FindFirst(TreeScope.TreeScope_Children, condition2);
 
-            Console.WriteLine(e2.CurrentClassName);
+            Console.WriteLine(e2.CurrentName);
 
 
 
