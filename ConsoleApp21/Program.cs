@@ -2,6 +2,7 @@
 using UIAutomationClient;
 using System.Threading;
 using System.Windows.Automation;
+using System.Diagnostics;
 
 namespace TestScenario
 {
@@ -9,7 +10,8 @@ namespace TestScenario
     {
 
         static void Main(string[] args) {
-
+            Process p = Process.Start("C:\\Windows\\notepad.exe");
+            Thread.Sleep(5000);
             // Instantiate the UIA object:
             IUIAutomation _automation = new CUIAutomation();
             // Get the root element
@@ -21,7 +23,7 @@ namespace TestScenario
             Console.WriteLine("The actual value is: '{0}'", rootName);
 
         
-            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_IsKeyboardFocusablePropertyId, true);
+            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_ClassNamePropertyId, "Notepad");
           
             IUIAutomationElement e = rootElement.FindFirst(TreeScope.TreeScope_Children, condition);
 
