@@ -21,11 +21,11 @@ namespace TestScenario
             Console.WriteLine("The actual value is: '{0}'", rootName);
 
         
-            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_ValueValuePropertyId, "");
+            IUIAutomationCondition condition = _automation.CreatePropertyCondition(UIA_PropertyIds.UIA_IsKeyboardFocusablePropertyId, true);
           
             IUIAutomationElement e = rootElement.FindFirst(TreeScope.TreeScope_Children, condition);
 
-            Console.WriteLine(e.ToString());
+            Console.WriteLine(e.CurrentName);
             
 
             Thread.Sleep(10000);
