@@ -26,7 +26,7 @@ namespace TestScenario
 
             //find forklift id field
             AutomationElement loginButton = loginForm.FindFirst(TreeScope.Children,
-            new PropertyCondition(AutomationElement.AutomationIdProperty, "btnLogIn"));
+            new PropertyCondition(AutomationElement.NameProperty, "Log In"));
             Console.WriteLine("found login button");
             Thread.Sleep(1000);
 
