@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading;
-using System.Windows.Forms;
-using UIAutomationClient;
+using UIDeskAutomationLib;
 
 namespace ConsoleApp1
 {
@@ -9,14 +8,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            IUIAutomation automation = new CUIAutomation();
-            IUIAutomationElement desktop = automation.GetRootElement();
 
-            IUIAutomationCondition processIdCondition = automation.CreatePropertyCondition(30005, "Untitled - Notepad");
-            IUIAutomationElement e = desktop.FindFirst(TreeScope.TreeScope_Children, processIdCondition);
-        
+            var engine = new Engine();
+            engine.StartProcess("notepad.exe");
+            UIDA_Window window = engine.GetTopLevel("Untitled - Notepad");
+            var btnOne = window.Button("Close", true);
 
-            Console.WriteLine(e.CurrentClassName);
+            Thread.Sleep(2000);
+            btnOne.Click();
+
+
+
             //get the first Frame Tab element found.
             Thread.Sleep(15000);
 

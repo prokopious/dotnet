@@ -12,3 +12,4 @@ C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
 C:\Users\huyetto\source\repos\ConsoleApp1\bin\Debug\System.dll
 C:\Users\huyetto\source\repos\ConsoleApp1\bin\Debug\System.Windows.Forms.dll
 C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
+C:\Users\huyetto\source\repos\ConsoleApp1\bin\Debug\UIDeskAutomation.dll
