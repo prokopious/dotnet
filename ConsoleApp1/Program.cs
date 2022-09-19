@@ -14,8 +14,7 @@ namespace ConsoleApp1
 
             IUIAutomationCondition processIdCondition = automation.CreatePropertyCondition(30005, "Untitled - Notepad");
             IUIAutomationElement e = desktop.FindFirst(TreeScope.TreeScope_Children, processIdCondition);
-            Thread.Sleep(5000);
-            SendKeys.SendWait("sdfsdfsd");
+        
 
             Console.WriteLine(e.CurrentClassName);
             //get the first Frame Tab element found.
