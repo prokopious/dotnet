@@ -1,0 +1,14 @@
+C:\Users\huyetto\source\repos\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\huyetto\source\repos\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\huyetto\source\repos\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\Interop.UIA.dll
+C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\Interop.UIAutomationClient.dll
+C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.ResolveComReference.cache
+C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\huyetto\source\repos\ConsoleApp1\bin\Debug\System.dll
+C:\Users\huyetto\source\repos\ConsoleApp1\bin\Debug\System.Windows.Forms.dll
+C:\Users\huyetto\source\repos\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
