@@ -30,14 +30,13 @@ namespace TestScenario
             //find forklift id field
             AutomationElement operIdField = loginForm.FindFirst(TreeScope.Children, new PropertyCondition(AutomationElement.AutomationIdProperty, "txtOperID")
             );
-            Console.WriteLine("found login button");
+            Console.WriteLine("found operator id field");
             Thread.Sleep(1000);
 
             //click login button
-            ValuePattern writeText =
-                   operIdField.GetCurrentPattern(ValuePattern.Pattern)
-                   as ValuePattern;
-            writeText.SetValue("23423");
+            operIdField.SetFocus();
+            Thread.Sleep(1000);
+            SendKeys.SendWait("23423");
             Thread.Sleep(1000);
             //SendKeys.SendWait("23423");
             Thread.Sleep(1000);
