@@ -11,3 +11,8 @@ C:\Users\huyetto\source\repos\ConsoleApp8\bin\Debug\UIAutomationClientsideProvid
 C:\Users\huyetto\source\repos\ConsoleApp8\bin\Debug\UIAutomationProvider.dll
 C:\Users\huyetto\source\repos\ConsoleApp8\bin\Debug\UIAutomationTypes.dll
 C:\Users\huyetto\source\repos\ConsoleApp8\obj\Debug\ConsoleApp8.csproj.CopyComplete
+C:\Users\huyetto\source\repos\ConsoleApp8\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\huyetto\source\repos\ConsoleApp8\bin\Debug\System.Data.dll
+C:\Users\huyetto\source\repos\ConsoleApp8\bin\Debug\System.dll
+C:\Users\huyetto\source\repos\ConsoleApp8\bin\Debug\System.Windows.Forms.dll
+C:\Users\huyetto\source\repos\ConsoleApp8\bin\Debug\System.Windows.Input.Manipulations.dll
