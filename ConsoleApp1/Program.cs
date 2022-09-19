@@ -10,8 +10,8 @@ namespace ConsoleApp1
         {
 
             var engine = new Engine();
-            engine.StartProcess("notepad.exe");
-            UIDA_Window window = engine.GetTopLevel("Untitled - Notepad");
+            Thread.Sleep(7000);
+            UIDA_Window window = engine.GetTopLevel("Microsoft .NET Framework");
             var btnOne = window.Button("Close", true);
 
             Thread.Sleep(2000);
