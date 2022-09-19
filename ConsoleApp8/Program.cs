@@ -34,7 +34,7 @@ namespace TestScenario
             Thread.Sleep(1000);
 
             //click login button
-      
+            operIdField.SetFocus()
             Thread.Sleep(1000);
             SendKeys.SendWait("23423");
             Thread.Sleep(1000);
