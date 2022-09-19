@@ -2,6 +2,9 @@
 using System.Windows.Automation;
 using System.Diagnostics;
 using System.Threading;
+using System.Xml.Linq;
+using System.Windows.Forms;
+
 namespace TestScenario
 {
     class Program
@@ -25,19 +28,20 @@ namespace TestScenario
             Thread.Sleep(1000);
       
             //find forklift id field
-            AutomationElement loginButton = loginForm.FindFirst(TreeScope.Children, new PropertyCondition(AutomationElement.NameProperty, "Log In")
+            AutomationElement operIdField = loginForm.FindFirst(TreeScope.Children, new PropertyCondition(AutomationElement.AutomationIdProperty, "txtOperID")
             );
             Console.WriteLine("found login button");
             Thread.Sleep(1000);
 
             //click login button
-            InvokePattern invokePattern =
-                   loginButton.GetCurrentPattern(InvokePattern.Pattern)
-                   as InvokePattern;
+            ValuePattern writeText =
+                   operIdField.GetCurrentPattern(ValuePattern.Pattern)
+                   as ValuePattern;
+            writeText.SetValue("23423");
             Thread.Sleep(1000);
-            invokePattern.Invoke();
-               Thread.Sleep(1000);
-            Console.WriteLine("clicked login button");
+            //SendKeys.SendWait("23423");
+            Thread.Sleep(1000);
+            Console.WriteLine("set operator id value");
 
             Thread.Sleep(5000);
 
