@@ -23,10 +23,13 @@ namespace TestScenario
             new PropertyCondition(AutomationElement.AutomationIdProperty, "pnlLogin"));
             Console.WriteLine("found login form");
 
-
+            Condition conditions = new AndCondition(
+                       new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Button),
+                       new PropertyCondition(AutomationElement.NameProperty, "Log In")
+                       );
             //find forklift id field
-            AutomationElement loginButton = loginForm.FindFirst(TreeScope.Children,
-            new PropertyCondition(AutomationElement.NameProperty, "Log In"));
+            AutomationElement loginButton = loginForm.FindFirst(TreeScope.Children, conditions
+            );
             Console.WriteLine("found login button");
             Thread.Sleep(1000);
 
