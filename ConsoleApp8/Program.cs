@@ -14,25 +14,30 @@ namespace TestScenario
             AutomationElement aeDesktop = AutomationElement.RootElement;
             Console.WriteLine("found desktop");
 
-   
-            AutomationElement loginForm = aeDesktop.FindFirst(TreeScope.Children,
-              new PropertyCondition(AutomationElement.AutomationIdProperty, "frmLogin"));
+            //find login window for edock
+            AutomationElement loginWindow = aeDesktop.FindFirst(TreeScope.Children,
+            new PropertyCondition(AutomationElement.AutomationIdProperty, "frmLogin"));
             Console.WriteLine("found login window");
 
+            AutomationElement loginForm = loginWindow.FindFirst(TreeScope.Children,
+            new PropertyCondition(AutomationElement.AutomationIdProperty, "pnlLogin"));
+            Console.WriteLine("found login form");
+
+
+            //find forklift id field
+            AutomationElement loginButton = loginForm.FindFirst(TreeScope.Children,
+            new PropertyCondition(AutomationElement.AutomationIdProperty, "btnLogIn"));
+            Console.WriteLine("found login button");
             Thread.Sleep(1000);
 
-            AutomationElement forkliftID = loginForm.FindFirst(TreeScope.Children,
-            new PropertyCondition(AutomationElement.NameProperty, "Enter Forklift ID"));
+            //click login button
+            InvokePattern invokePattern =
+                   loginButton.GetCurrentPattern(InvokePattern.Pattern)
+                   as InvokePattern;
 
-            Console.WriteLine("found forklift id");
+            invokePattern.Invoke();
 
-   
-
-     
-
-
-
-
+            Console.WriteLine("clicked login button");
 
             Thread.Sleep(5000);
 
@@ -41,4 +46,4 @@ namespace TestScenario
 
         }
     }
-}
+    }
